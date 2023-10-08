@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/(ID HERE)
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Marcus K",
+    "subscribedToChannel": "Formula 1"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6521e3ffc0af5fefaa331007
+
+###
+
+PATCH http://localhost:3000/subscribers/6521e25cbfb4922c64beda04
+Content-Type: application/json
+
+{
+  "name": "NEW Marcus K"
+}
